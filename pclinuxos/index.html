@@ -59,6 +59,17 @@
 	    text-align: right;
 	    position: absolute;
 	}
+	#notice {
+	    top: 100px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    position: relative;
+	}
+	#notice p {
+	    color: red;
+	    font-weight: bold;
+	    text-align: center;
+	}
 	#footer a { color: #666; }
     </style>
 </head>
@@ -70,6 +81,12 @@
 	    <p>&nbsp;</p><p>&nbsp;</p>
 	    <p>Soon</p>
 	</div>
+    </div>
+    <div id="notice">
+	<p>&nbsp;</p>
+	<p>Note: there is a <a href="https://github.com/nwjs/nw.js/issues/1864" target="_blank">known bug relative to nw.js</a>, the desktop client may segfault while shutting down</p>
+	<p>&nbsp;</p>
+	<p>Bug reports welcome, get in touch <a href="https://github.com/PeerioTechnologies/peerio-client/issues/new?title=[Linux Packaging]" target="_blank">on github</a>!</p>
     </div>
     <div id="footer">
 	<address>
