@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>Peerio Linux Repositories</title>
+    <link rev="made" href="mailto:peerio@peerio.com" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../img/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../img/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="../img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="../img/mstile-144x144.png">
+    <style type="text/css">
+	 *{ margin: 0; padding: 0; }
+	body, html { height: 100%; min-height: 100%; }
+	body {
+	    font-size:11px;
+	    font-family:arial;
+	    background-color: #2c95cf;
+	}
+	#container {
+	    top: 40%;
+	    left: 50%;
+	    width: 800px;
+	    height: 600px;
+	    position: absolute;
+	    margin-top: -200px;
+	    margin-left: -400px;
+	    background: url("../img/logo-title.png") center top no-repeat;
+	    background-size: 120px auto;
+	}
+	#inner {
+	    top: 150px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    width: 480px;
+	    height: 200px;
+	    text-align: center;
+	    position: relative;
+	}
+	#inner h1 { color: #fff; }
+	#inner h2 { color: #fff; }
+	#inner p { color: #333; }
+	#cmd p { color: #fff; }
+	#footer {
+	    top: 72%;
+	    left: 72%;
+	    color: #555;
+	    text-align: right;
+	    position: absolute;
+	}
+	#footer a { color: #666; }
+    </style>
+</head>
+<body>
+    <div id="container">
+	<div id="inner">
+	    <h1>CentOS <i>(7)</i></h1>
+	    <h2>Installation Instructions</h2>
+	    <p>&nbsp;</p><p>&nbsp;</p>
+	    <p>To install this repository, first download our GPG public key</p>
+	    <div id="cmd"><p>sudo wget https://linux.peerio.com/public.key -O /etc/pki/rpm-gpg/RPM-GPG-KEY-Peerio</p></div>
+	    <p>&nbsp;</p>
+	    <p>Then, download our repository configuration</p>
+	    <div id="cmd"><p>sudo wget https://linux.peerio.com/centos7/Peerio.repo -O /etc/yum.repo.d/Peerio.repo</p></div>
+	    <p>&nbsp;</p>
+	    <p>You should then be able to install your package using yum</p>
+	    <div id="cmd"><p>sudo yum install peerio-client</p></div>
+	</div>
+    </div>
+    <div id="footer">
+	<address>
+	    <a href="/">Repository root</a><br/>
+	</address>
+    </div>
+</body>
+</html>

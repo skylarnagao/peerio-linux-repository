@@ -1,0 +1,9 @@
+[Peerio]
+name=Peerio
+baseurl=https://linux.peerio.com/opensuse$releasever/$basearch
+enabled=1
+autorefresh=1
+gpgcheck=0
+path=/
+type=yum
+keeppackages=0

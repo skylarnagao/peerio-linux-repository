@@ -1,0 +1,6 @@
+[local]
+name=CentOS-$releasever - local packages for $basearch
+baseurl=https://linux.peerio.com/fedora$releasever/$basearch
+enabled=1
+gpgcheck=0
+protect=1
